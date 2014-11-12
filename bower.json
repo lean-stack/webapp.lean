@@ -1,0 +1,10 @@
+{
+  "name": "lean",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lean-stack/webapp.lean",
+  "authors": [
+    "Michael Alt <lean@michael-alt.info>"
+  ],
+  "description": "lean webapp boilerplate",
+  "license": "ISC"
+}

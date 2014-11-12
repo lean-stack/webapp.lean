@@ -1,0 +1,23 @@
+{
+  "name": "lean",
+  "version": "0.0.0",
+  "description": "lean webapp boilerplate.",
+  "main": "index.js",
+  "dependencies": {
+    "wiredep": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://lean-stack@github.com/lean-stack/webapp.lean.git"
+  },
+  "author": "Michael Alt <lean@michael-alt.info>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lean-stack/webapp.lean/issues"
+  },
+  "homepage": "https://github.com/lean-stack/webapp.lean"
+}

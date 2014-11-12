@@ -1,7 +1,7 @@
 {
   "name": "lean",
   "version": "0.0.0",
-  "description": "lean webapp boilerplate.",
+  "description": "lean webapp boilerplate",
   "main": "index.js",
   "dependencies": {
     "wiredep": "^2.1.0"

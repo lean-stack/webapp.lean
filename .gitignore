@@ -1,3 +1,6 @@
+# Build directories
+dist
+
 # Dependency directories
 node_modules
-app/bower_components
+src/bower_components

@@ -14,7 +14,19 @@ gulp.task('styles', function(){
     .pipe($.notify("Styles preprocessing complete."));
 });
 
-gulp.task('build', ['styles']);
+gulp.task('scripts', function(){
+
+  var browserify = require('browserify');
+  var source     = require('vinyl-source-stream');
+
+  browserify(['./src/scripts/app.js'])
+    .bundle()
+    .pipe(source('bundle.js'))
+    .pipe(gulp.dest('src/scripts'))
+    .pipe($.notify("Script bundling complete."));
+});
+
+gulp.task('build', ['styles','scripts']);
 
 gulp.task('default', ['build']);
 
@@ -27,6 +39,7 @@ gulp.task('dist', ['build'], function () {
 
       .pipe(assets)
       .pipe($.if('*.css',$.csso()))
+      .pipe($.if('*.js',$.uglify()))
       .pipe(assets.restore())
 
       .pipe($.useref())

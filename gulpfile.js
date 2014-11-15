@@ -19,7 +19,7 @@ gulp.task('scripts', function(){
   var browserify = require('browserify');
   var source     = require('vinyl-source-stream');
 
-  browserify(['./src/scripts/app.js'])
+  browserify(['./src/scripts/app/main.js'])
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('src/scripts'))
